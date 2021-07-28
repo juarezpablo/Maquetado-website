@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../template/bootstrap.css">
+    <link rel="stylesheet" href="../template/solicitud_estilo.css" type="text/css">
+    <title>Solicitud de Pedidos</title>
+</head>
+<body>
+    <div class="container">
+        
+        <img src="../img/orden.jpg" alt="" class="">
+        <h1 class="">Formulario de Pedido</h1>
+        <form>
+            <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                    <label for="formGroupExampleInput">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="formGroupExampleInput">Apellido</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row">
+                <label for="usuario">Usuario</label>
+                <div class="col-md-12 input-group mb-3">
+                    
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"  > 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 form-group mb-3">
+                    <label for="formGroupExampleInput">Direccion</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Calle, Nro, Piso">
+                </div>
+                <div class="col-md-3 form-group">
+                    <label for="formGroupExampleInput">Cod Postal</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Codigo Postal">
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="inputState">Localidad</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Selecciona...</option>
+                      <option>...</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="inputState">Provincia</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Selecciona...</option>
+                      <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <br>  
+            <hr class="mb-3">
+            
+            <h3 class="mb-3">Forma de Pago</h3>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">Tarjeta de Credito</label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">Mercadopago</label>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group mb-3 ">
+                    <label for="formGroupExampleInput">Nombre del titular de la tarjeta</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="formGroupExampleInput">Numero de la tarjeta</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Numero de tarjeta">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 form-group mb-3 ">
+                    <label for="formGroupExampleInput">Fecha de vto</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="MM/AAAA">
+                </div>
+                <div class="col-md-3 form-group mb-3 ">
+                    <label for="formGroupExampleInput">Codigo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Codigo de seguridad">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">				
+                <div class="col-md-3">
+                <button class="btn btn-danger btn-lg btn-block" type="submit">Ingresar la Solicitud</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><br>
+</body>
+</html>
